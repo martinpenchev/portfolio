@@ -32,7 +32,7 @@ const ChooseLanguage: React.FC = () => {
       visible={isVisible}
       onVisibleChange={setIsVisible}
     >
-      <Button icon={<GlobalOutlined />} shape="circle" type="link" />
+      <Button icon={<GlobalOutlined />} shape="circle" type="link" size="large" className="nav-link" />
     </Popover>
   );
 };

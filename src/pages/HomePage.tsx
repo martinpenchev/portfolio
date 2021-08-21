@@ -9,7 +9,11 @@ const { Title } = Typography;
 const HomePage: React.FC<RouteComponentProps> = () => {
   const { t } = useTranslation();
 
-  return <Title level={4}>{t('Home Page')}</Title>;
+  return (
+    <div className="container">
+      <Title level={4}>{t('Home Page')}</Title>
+    </div>
+  );
 };
 
 export default HomePage;

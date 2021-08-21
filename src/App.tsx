@@ -16,7 +16,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <Layout>
+      <Layout style={{ minHeight: '100vh' }}>
         <Nav />
         <Layout.Content>
           <Routes />
