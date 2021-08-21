@@ -19,7 +19,7 @@ const SnippetsPage: React.FC<RouteComponentProps> = () => {
   return (
     <div className="container">
       <Row className="mt-4">
-        <PurpleTitle level={3}>{t('Snippets')}</PurpleTitle>
+        <PurpleTitle level={2}>{t('Snippets')}</PurpleTitle>
       </Row>
       <Row className="mt-4" gutter={[24, 24]}>
         {snippetData.map(({ id, title, description }) => (

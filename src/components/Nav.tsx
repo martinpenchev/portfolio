@@ -40,6 +40,11 @@ const Nav: React.FC = () => {
               {t('Snippets')}
             </Link>
           </li>
+          <li className="nav-item mx-2">
+            <Link to="/notebooks" className="nav-link font-weight-bold">
+              {t('Notebooks')}
+            </Link>
+          </li>
           <li className="nav-item mx-2 text-light">
             <ChooseLanguage />
           </li>

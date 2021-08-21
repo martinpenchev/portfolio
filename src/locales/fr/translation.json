@@ -1,8 +1,9 @@
 {
   "MP": "MP",
-  "Snippets": "Fragments",
+  "Home Page": "Page d'accueil",
+  "page_not_found": "La destination recherchée n'existe pas. Veuillez retourner à la page d'accueil.",
   "Projects": "Projets",
   "Portfolio": "Portfolio",
-  "Home Page": "Page d'accueil",
-  "page_not_found": "La destination recherchée n'existe pas. Veuillez retourner à la page d'accueil."
+  "Snippets": "Fragments",
+  "Notebooks": "Notebooks"
 }
