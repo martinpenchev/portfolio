@@ -1,9 +1,14 @@
-import * as React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from '../App';
+import React from 'react';
+import { shallow } from 'enzyme';
+import Nav from '../components/Nav';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('react-i18next', () => ({
+  useTranslation: () => ({ t: (key: string) => key }),
+}));
+
+describe('Nav', () => {
+  it('Renders correctly', () => {
+    const nav = shallow(<Nav />);
+    expect(nav).toMatchSnapshot();
+  });
 });
