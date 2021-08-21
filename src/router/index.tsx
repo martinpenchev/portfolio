@@ -1,15 +1,13 @@
-import * as React from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
-import routesConfig from "./config";
-import PageNotFound from "../pages/PageNotFound";
+import * as React from 'react';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import routesConfig from './config';
+import PageNotFound from '../pages/PageNotFound';
 
 const Routes: React.FC = () => {
   const location = useLocation();
 
   React.useEffect(() => {
-    const currentRoute = routesConfig.find(
-      (route) => route.path === location.pathname
-    );
+    const currentRoute = routesConfig.find((route) => route.path === location.pathname);
 
     if (currentRoute) {
       document.title = currentRoute.title;
