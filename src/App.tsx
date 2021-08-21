@@ -15,7 +15,7 @@ const App: React.FC = () => {
   }, [language, i18n]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Layout style={{ minHeight: '100vh' }}>
         <Nav />
         <Layout.Content>
